@@ -1,0 +1,318 @@
+
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    margin: auto;   
+    background-image: url("https://i.pinimg.com/736x/28/fe/f9/28fef9ece742153ea400bcae2f1f9d90--mario-luigi-mario-bros.jpg");
+}
+
+    .header {
+        text-align: center;
+        width: 100%;
+        border-bottom: 10px solid #d9111b;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+        h1 {
+            position: absolute;
+            right: 5px;
+            top: 9px;
+            color: #d9111b;
+            font-size: 39px;
+            font-family: 'Press Start 2P', cursive;
+            margin: 10px;
+        }
+
+        .shyguy {
+            display: flex;
+            margin: 1px 0 1px 10px;
+        }
+
+
+    .toolContainer {
+        background-color: rgba(230, 230, 230, 0.7);
+        display: inline-block;
+        text-align: center;  
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+
+        /*///////ICON GENERAL////////*/
+
+            .dropdown {
+                display: inline-block;
+                position: relative;
+                width: 64px;
+                height: 64px;
+            }
+
+            .dropdown-content {
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.4);
+                z-index: 1;
+                border-radius: 4px;
+                display: block;
+                float: none;               
+            }
+
+            .hidden {
+                display:none;
+            }
+
+            p {
+                font-size: 1.75em;
+                margin: 2px;
+                font-weight: bold;
+            }
+
+            form {
+                font-size:0.5em;
+                margin-top: 2em;
+            } 
+
+            .icon {
+                border-radius: 2px;
+                border: 2px solid lightgray;
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+                margin: 10px;
+                background-color: rgba(0, 0, 0, 0.1);
+                box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.4);
+            }  
+    
+
+        /*///////NEW CANVAS ICON////////*/
+
+            #newCanvasIcon {
+                position: absolute;
+                left: 6px;
+                top: 6px;
+            }
+
+            #plus {
+                position: absolute;
+                top: 16px;
+                left: 22px;
+            }
+
+            input[type=number] {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                width: 3em;
+                margin-bottom: 10px;
+            }
+
+            input[type=submit] {
+                background-color: #d9111b;
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                border: none;
+                padding: 0.5em 1em 0.5em 1em;
+                border-radius: 4px;
+                box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.4);
+                margin: 0px 0 20px 0;
+            }
+
+            input[type=submit]:hover {
+                background-color: #b50e16;
+            }
+
+            input[type=submit]:active {
+                background-color: #b50e16;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+                transform: translateY(1px);
+                transform: translateX(1px);
+            }
+
+            #newCanvasDrop {
+                left: 25%;
+            }
+
+
+        /*///////COLOR CANVAS BG ICON////////*/
+            #canvas {
+                background-color: #ffffff;
+                position: absolute;
+                top: 16px;
+                right: 12px;
+                width: 26px;
+                height: 17px;
+            }
+
+            #canvasLines {
+                position: absolute;
+                top: 6px;
+                right: 0px;
+            }
+
+            #canvasBucket {
+                position: absolute;
+                top: 2px;
+                left: 5px;
+            }
+
+            #colorPicker, #colorPicker2, #bgPicker {
+                display: inline-block;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                margin: none;
+                padding: none;
+                border: none;
+            }
+
+        /*///////GRID TOGGLE ICON////////*/
+
+            #gridOff {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            #gridOn {
+                position: absolute; 
+                top: 10px;
+                left: 10px;                     
+            }
+
+        /*///////ZOOM ICON////////*/
+
+            #zoomIn, #zoomOut {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            #lockZoomPlus, #lockZoomMinus {
+                position:absolute;
+                bottom: 4px;
+                left: 4px;
+                display: none;
+            }
+
+        /*///////BRUSH COLOR ICON////////*/
+
+            #brushIcon {
+                background-color: #d9111b;
+                border-radius: 2px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                bottom: 5px;
+                left: 8px;
+               display: inline-block;    
+            }
+
+            #brushIcon2 {
+                background-color: #117fd9;
+                border-radius: 2px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                bottom: 5px;
+                left: 8px;
+               display: inline-block;    
+            }        
+
+            #paintbrush, #paintbrush2, #paintbrush3 {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+               display: inline-block;
+            }
+
+            .mouse {
+                position: absolute;
+                left: 2px;
+                top: 4px;
+            }
+
+        /*///////BRUSH SIZE ICON////////*/
+
+            input[type=radio] {
+               transform: scale(2);
+               margin: 8px 16px 8px 35px;
+               position: relative;
+            }
+
+            label {
+                font-size: 1em;
+                font-weight: 500;
+            }
+
+            #brushSizeDrop {
+                text-align: left;
+                left: 65%;
+            }
+
+            #pixSize {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                bottom: 5px;
+                left: 8px;
+                display: inline-block;    
+            }        
+
+/*///////CANVAS////////*/
+
+    #designCanvas {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            border-spacing: 0px;
+        }
+
+        tbody {
+            border: 5px solid black;
+            cursor: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/brush.png") 0 24, pointer;
+        }    
+
+        td  {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        td:hover {
+          box-shadow: inset 0px 0px 5px 0 rgba(90,90,90,0.75);
+        }
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .header {
+        display: none;
+    }
+
+    .toolContainer {
+        margin: 0;
+    }
+
+    .icon {
+        margin: 3px;
+    }
+}

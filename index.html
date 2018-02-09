@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <meta charset="UTF-8"> 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+    <div class = "header">
+        <h1>Pixel Art Maker</h1>
+        <img src="https://ih0.redbubble.net/image.138021271.9217/flat,800x800,070,f.jpg" width="50px" height="50px" class = "shyguy">   
+    </div>
+
+
+<div class = "toolContainer">    
+        <div class ="dropdown icon" id = "newCanvas">
+            <img id = "newCanvasIcon" src = "https://www.svgrepo.com/show/57803/canvas.svg"  width="50px" height="50px">
+            <img src = "https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/plus-big-circle-512.png" id = "plus" width="17px" height="17px">
+        </div>
+        <div class = "dropdown-content hidden" id = "newCanvasDrop">
+        <form id="sizePicker"><p>Grid Height:</p><input type="number" id="inputHeight" name="height" min="1" max="100" required value="25">
+        <p>Grid Width:</p><input type="number" id="inputWidth" name="width" min="1" max="100" required value="40"><br>
+        <input type="submit" id="submitButton"></form>
+        </div>  
+
+        <div class = "icon">
+            <div id = "canvas"> </div>              
+            <img src = "https://www.svgrepo.com/show/57803/canvas.svg" id = "canvasLines" width="50px" height="50px">
+            <img src = "https://cdn3.iconfinder.com/data/icons/smoothfill-design/30/design_018-fill_color-tool-graphic-bucket-paint-drop-512.png" id = "canvasBucket" width="30px" height="30px">
+            <input type="color" id="bgPicker" value= "#ffffff"> 
+        </div>
+
+        <div class = "icon" id = "iconGrid"><input type="image" src="http://wfarm3.dataknet.com/static/resources/icons/set112/a577bda5.png" width="40px" height="40px" name="grid" id="gridOn">
+        <input type="image" src="http://wfarm4.dataknet.com/static/resources/icons/set112/f666b78f.png" name="noGrid" id="gridOff" width="40px" height="40px">
+        </div>
+
+        <div class = "icon" id="pixelPlus"><input type="image" src="http://wfarm2.dataknet.com/static/resources/icons/set112/1b574f74.png" width="40px" height="40px" name="pxPlus" id = "zoomIn">            
+        <img src = "https://d30y9cdsu7xlg0.cloudfront.net/png/18799-200.png" id = "lockZoomPlus" width="18px" height="18px">
+        </div>
+        <div class = "icon" id="pixelMinus"><input type="image" src="http://wfarm2.dataknet.com/static/resources/icons/set113/a7aaaddc.png" width="40px" height="40px" name="pxMin" id = zoomOut> 
+        <img src = "https://d30y9cdsu7xlg0.cloudfront.net/png/18799-200.png" id = "lockZoomMinus" width="18px" height="18px">
+        </div>           
+
+        <div id = "brushContainer" class = "icon">
+            <div id = "brushIcon"></div>                
+            <img src = "http://wfarm4.dataknet.com/static/resources/icons/set114/adc36345.png" id = "paintbrush" width="40px" height="40px">
+            <img src = "https://image.flaticon.com/icons/svg/32/32041.svg" class = "mouse" width = "25px" height = "25px">            
+            <input type="color" id="colorPicker" value="#d9111b">
+        </div>                                                          
+        <div id = "brushContainer2" class = "icon">
+            <div id = "brushIcon2"></div>                
+            <img src = "http://wfarm4.dataknet.com/static/resources/icons/set114/adc36345.png" id = "paintbrush2" width="40px" height="40px">
+            <img src = "https://image.flaticon.com/icons/svg/31/31532.svg" class = "mouse" width = "25px" height = "25px">             
+            <input type="color" id="colorPicker2" value="#117fd9">
+        </div>            
+
+
+    <div class = "dropdown icon" id = "brushButton">
+            <img id = "pixSize" src="https://image.flaticon.com/icons/svg/54/54965.svg">                
+            <img src = "http://wfarm4.dataknet.com/static/resources/icons/set114/adc36345.png" id = "paintbrush3" width="40px" height="40px">
+    </div>
+        <div class = "dropdown-content hidden" id = "brushSizeDrop">
+            <input type="radio" id="smallBrush" name="brushSize" value="small" checked>
+            <label for="smallBrush">  Small</label> <br>
+            <input type="radio" id="midBrush" name="brushSize" value="mid">
+            <label for="midBrush">  Medium</label><br>
+            <input type="radio" id="bigBrush" name="brushSize" value="big">
+            <label for="bigBrush">  Large</label>   
+        </div>   
+</div>
+
+<br>
+
+<div id = "designCanvas">
+    <table id="pixelCanvas"></table>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+
+</body>
+</html>
+
+
+
+
+
